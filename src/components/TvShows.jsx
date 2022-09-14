@@ -4,7 +4,7 @@ import Gallery from './Gallery'
 const TvShows = () => {
   return (
     <div>
-        <Gallery query="harry potter"/>
+        <Gallery keyword="harry potter"/>
     </div>
   )
 }

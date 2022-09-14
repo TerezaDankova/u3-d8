@@ -12,9 +12,10 @@ import { Container, Col, Row, } from 'react-bootstrap'
     componentDidMount = () => {
         this.fetchMovies()
     }
+
     fetchMovies = async () => {
         try {
-            const url = `http://www.omdbapi.com/?apikey=8a241491&s=${this.props.query}`
+            const url = `http://www.omdbapi.com/?apikey=8a241491&s=${this.props.keyword}`
             const response = await fetch(url)
             const data = await response.json()
             console.log(data)
