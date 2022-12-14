@@ -11,11 +11,11 @@ export default class SingleMovie extends Component {
     
     render() {
         return (
-                        <Card >
+                        <Card style={{height: "200px", width: "300px"}} >
                             <Link to={'/details/' + this.props.movie.imdbID}>
                             <Card.Img style={{ width: '155px', height: "190px"}} variant="top" src={this.props.movie.Poster} />
                             </Link>
-                            <Card.Body className='p-3' style={{ height: "140px", backgroundColor: "#141414", border: "0.25px solid #9e9e96" }}>
+                            <Card.Body className='p-3' style={{backgroundColor: "#141414", border: "0.25px solid #9e9e96" }}>
                                 <Card.Title style={{ fontSize: "10px", color: "white"}}>{this.props.movie.Title}</Card.Title>
                                 <Card.Text style={{ fontSize: "12px", color: "white" }}>
                                     Made in: {this.props.movie.Year}
